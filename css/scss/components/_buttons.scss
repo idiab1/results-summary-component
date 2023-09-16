@@ -1,0 +1,14 @@
+// Button Continue
+.btn-continue{
+    width: 100%;
+    border-radius: 25px;
+    padding: 17px;
+    letter-spacing: .03rem;
+    border: none;
+    cursor: pointer;
+    background-color: $dark_gray_blue;
+    &:hover{
+        background: linear-gradient(to bottom, $light_slate_blue, $light_royal_blue);
+    }
+}
+// end of button continue
