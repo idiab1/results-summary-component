@@ -137,4 +137,109 @@ body {
   color: hsl(241deg, 100%, 89%);
 }
 
+@media (max-width: 767.98px) {
+  .app {
+    height: 100%;
+  }
+  .app .container {
+    width: 50%;
+    display: block;
+    box-shadow: none;
+  }
+  .app .container .result {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .app .container .result .current-result span {
+    color: hsl(241deg, 100%, 89%);
+    font-size: 15px;
+  }
+  .app .container .result .circle {
+    width: 85px;
+    height: 85px;
+    text-align: center;
+    margin: 17px auto;
+    padding: 30px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, hsl(256deg, 72%, 46%), hsla(241deg, 72%, 46%, 0));
+  }
+  .app .container .result .circle h1 {
+    font-size: 3rem;
+  }
+  .app .container .result .circle span {
+    color: hsl(241deg, 100%, 89%);
+    font-size: 15px;
+  }
+  .app .container .result .current-result-text {
+    padding-bottom: 15px;
+  }
+  .app .container .result .current-result-text span {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .app .container .result .description p {
+    color: hsl(241deg, 100%, 89%);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .app .container .summary {
+    padding: 20px 0;
+    width: 347px;
+  }
+  .app .container .summary h2 {
+    padding-bottom: 20px;
+    font-size: 19px;
+  }
+  .app .container .summary .subjects .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EEE;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .app .container .summary .subjects .item.reaction {
+    color: hsl(0deg, 100%, 67%);
+    background-color: hsla(0deg, 100%, 67%, 0.1);
+  }
+  .app .container .summary .subjects .item.memory {
+    color: hsl(39deg, 100%, 56%);
+    background-color: hsla(39deg, 100%, 56%, 0.1);
+  }
+  .app .container .summary .subjects .item.verbal {
+    color: hsl(166deg, 100%, 37%);
+    background-color: hsla(166deg, 100%, 37%, 0.1);
+  }
+  .app .container .summary .subjects .item.visual {
+    color: hsl(234deg, 85%, 45%);
+    background-color: hsla(234deg, 85%, 45%, 0.1);
+  }
+  .app .container .summary .subjects .item .info {
+    display: inline-flex;
+  }
+  .app .container .summary .subjects .item .info .image {
+    padding-right: 10px;
+  }
+  .app .container .summary .subjects .item .info p {
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .app .container .summary .subjects .item .grade {
+    font-weight: 800;
+  }
+  .app .container .summary .subjects .item .grade p {
+    color: hsl(224deg, 30%, 27%);
+  }
+  .app .container .summary .subjects .item .grade p span {
+    padding-left: 5px;
+    color: hsl(241deg, 100%, 89%);
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .app .container {
+    width: 75%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
