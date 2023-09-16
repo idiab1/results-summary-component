@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+.btn-continue {
+  width: 100%;
+  border-radius: 25px;
+  padding: 17px;
+  letter-spacing: 0.03rem;
+  border: none;
+  cursor: pointer;
+  background-color: hsl(224deg, 30%, 27%);
+  color: hsl(0deg, 0%, 100%);
+}
+.btn-continue:hover {
+  background: linear-gradient(to bottom, hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app .container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 5px 5px 4px 0px hsla(241deg, 100%, 89%, 0.4);
+  border-radius: 1.5rem;
+}
+.app .container .result {
+  display: grid;
+  place-content: center;
+  gap: 0.5rem;
+  width: 250px;
+  height: 350px;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  color: hsl(0deg, 0%, 100%);
+  font-size: smaller;
+  background: linear-gradient(to bottom, hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+}
+.app .container .result .current-result span {
+  color: hsl(241deg, 100%, 89%);
+  font-size: 15px;
+}
+.app .container .result .circle {
+  width: 85px;
+  height: 85px;
+  text-align: center;
+  margin: 17px auto;
+  padding: 30px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, hsl(256deg, 72%, 46%), hsla(241deg, 72%, 46%, 0));
+}
+.app .container .result .circle h1 {
+  font-size: 3rem;
+}
+.app .container .result .circle span {
+  color: hsl(241deg, 100%, 89%);
+  font-size: 15px;
+}
+.app .container .result .current-result-text {
+  padding-bottom: 15px;
+}
+.app .container .result .current-result-text span {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.app .container .result .description p {
+  color: hsl(241deg, 100%, 89%);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.app .container .summary {
+  padding: 20px 30px;
+  width: calc(100% - 300px);
+}
+.app .container .summary h2 {
+  padding-bottom: 25px;
+  font-size: 19px;
+}
+.app .container .summary .subjects .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EEE;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 15px;
+}
+.app .container .summary .subjects .item.reaction {
+  color: hsl(0deg, 100%, 67%);
+  background-color: hsla(0deg, 100%, 67%, 0.1);
+}
+.app .container .summary .subjects .item.memory {
+  color: hsl(39deg, 100%, 56%);
+  background-color: hsla(39deg, 100%, 56%, 0.1);
+}
+.app .container .summary .subjects .item.verbal {
+  color: hsl(166deg, 100%, 37%);
+  background-color: hsla(166deg, 100%, 37%, 0.1);
+}
+.app .container .summary .subjects .item.visual {
+  color: hsl(234deg, 85%, 45%);
+  background-color: hsla(234deg, 85%, 45%, 0.1);
+}
+.app .container .summary .subjects .item .info {
+  display: inline-flex;
+}
+.app .container .summary .subjects .item .info .image {
+  padding-right: 10px;
+}
+.app .container .summary .subjects .item .info p {
+  font-weight: 700;
+  font-size: 15px;
+}
+.app .container .summary .subjects .item .grade {
+  font-weight: 800;
+}
+.app .container .summary .subjects .item .grade p {
+  color: hsl(224deg, 30%, 27%);
+}
+.app .container .summary .subjects .item .grade p span {
+  padding-left: 5px;
+  color: hsl(241deg, 100%, 89%);
+}
+
+/*# sourceMappingURL=style.css.map */
