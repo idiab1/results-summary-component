@@ -1,0 +1,137 @@
+// app
+.app{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // Container
+    .container {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        background-color: $white;
+        box-shadow: 5px 5px 4px 0px hsla(241deg, 100%, 89%, 0.4);
+        border-radius: 1.5rem;
+
+        // Result
+        .result {
+            display: grid;
+            place-content: center;
+            gap: .5rem;
+            width: 250px;
+            height: 350px;
+            padding: 3rem;
+            text-align: center;
+            border-radius: 1.5rem;
+            color: $white;
+            font-size: smaller;
+            background: linear-gradient(to bottom, $light_slate_blue, $light_royal_blue);
+            // Current result
+            .current-result{
+                span{
+                    color: $light_lavender;
+                    font-size: 15px;
+                }
+            }
+            // Circle
+            .circle {
+                width: 85px;
+                height: 85px;
+                text-align: center;
+                margin: 17px auto;
+                padding: 30px;
+                border-radius: 50%;
+                background: linear-gradient(to bottom, $piolet_blue, $persian_blue);
+                h1{
+                    font-size: 3rem;
+                }
+                span{
+                    color: $light_lavender;
+                    font-size: 15px;
+                }
+            }
+
+            // Current Result text 
+            .current-result-text{
+                padding-bottom: 15px;
+                span{
+                    font-size: 20px;
+                    font-weight: bolder; 
+                }
+            }
+            // Description
+            .description{
+                p{
+                    color: $light_lavender;
+                    font-size: 15px;
+                    line-height: 1.5;            
+                }
+            }
+        }
+        // end of summary
+        // Summary
+        .summary {
+            padding: 20px 30px;
+            width: calc(100% - 300px);
+            h2 {
+                padding-bottom: 25px;
+                font-size: 19px;            
+            }
+            // Subjects
+            .subjects{
+                // Item
+                .item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #EEE;
+                    margin-bottom: 20px;
+                    border-radius: 10px;
+                    padding: 15px;
+                    &.reaction {
+                        color: $light_red;
+                        background-color: hsl(0, 100%, 67%, .1);
+                    }
+                    &.memory {
+                        color: $orangey_yellow;
+                        background-color: hsl(39, 100%, 56%, .1);
+                    }
+                    &.verbal {
+                        color: $green_teal;
+                        background-color: hsl(166, 100%, 37%, .1);
+                    }
+                    &.visual {
+                        color: $cobalt_blue;
+                        background-color: hsl(234, 85%, 45%, .1);
+                    }
+                    // Info
+                    .info {
+                        display: inline-flex;
+                        .image {
+                            padding-right: 10px;
+                        }
+                        p{
+                            font-weight: 700;
+                            font-size: 15px;
+                        }
+                    }
+
+                    // grade
+                    .grade{
+                        font-weight: 800;
+                        p{
+                            color: $dark_gray_blue;
+                            span{
+                                padding-left: 5px;
+                                color: $light_lavender;
+                            }
+                        }
+                    }
+                }
+            }
+            // end of subjects
+            
+        }
+    }
+}
